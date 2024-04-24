@@ -1,7 +1,0 @@
-[[redirects]]
-    from = "/Projects"
-    to="/"
-[build]
-  base = "./PORTFOLIO2.0FRONTEND"
-  command = "npm run build"
-  publish = "ruta/a/la/carpeta/de/despliegue"
