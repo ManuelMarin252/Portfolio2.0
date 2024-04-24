@@ -2,6 +2,6 @@
     from = "/Projects"
     to="/"
 [build]
-  base = "./PORTFOLIO2.0FRONTEND"
+  base = "ruta/a/la/carpeta/de/inicio"
   command = "npm run build"
   publish = "ruta/a/la/carpeta/de/despliegue"
