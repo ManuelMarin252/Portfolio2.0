@@ -1,7 +1,26 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
   color-scheme: light dark;
 }
-body{
+body {
   display: flex;
   justify-content: center;
+}
+#root {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  position: relative;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

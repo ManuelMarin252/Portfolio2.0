@@ -3,18 +3,13 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'standard-with-typescript',
-    'plugin:react/recommended'
-  ],
+  extends: ['standard-with-typescript', 'plugin:react/recommended'],
   overrides: [
     {
       env: {
         node: true
       },
-      files: [
-        '.eslintrc.{js,cjs}'
-      ],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script'
       }
@@ -25,9 +20,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   rules: {
     'react-refresh/only-export-components': 'off',
     'react/react-in-jsx-scope': 'off',

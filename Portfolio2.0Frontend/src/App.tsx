@@ -1,36 +1,35 @@
 import { Box } from '@mui/material'
 import './App.css'
 import { Header } from './components/Header'
+import { ThemeProvider } from '@mui/material/styles'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { ColorModeContext, useMode } from './theme'
+
+import Footer from './components/Footer.tsx'
+import { LanguageProvider } from './Context/lenguageContext.tsx'
+import MainPage from './components/MainPage.tsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ProjectsPage from './components/ProjectsPage.tsx'
 function App () {
+  const [theme, colorMode] = useMode()
+
   return (
     <>
-    {/* <Box sx={{
-      position: 'relative',
-      height: '100vh',
-      width: '100vw',
-      background: 'rgb(0, 0, 0)'
-    }}>
-      <Box sx={{
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        top: 0,
-        background: 'linear-gradient(to right, #4f4f4f2e 1px, transparent 1px), linear-gradient(to bottom, #8080800a 1px, transparent 1px)',
-        backgroundSize: '14px 24px'
-      }}></Box>
-    </Box> */}
-    {/* <Box sx={{
-      position: 'absolute',
-      top: 0,
-      zIndex: -2,
-      height: '100vh',
-      width: '100vw',
-      background: 'radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0))'
-    }}></Box> */}
-    <Box sx={{ position: 'absolute', inset: 0, zIndex: -10, height: '100vh', width: '100vw', items: 'center', px: 5, py: 24, background: 'radial-gradient(200% 200% at 60% 0%, hsl(192, 15%, 10%) 45%, hsl(183, 54%, 38%) 100%)' }}>
-      </Box>
-      <Header/>
+      <LanguageProvider>
+        <ColorModeContext.Provider value={colorMode}>
+          <ThemeProvider theme={theme}>
+            <BrowserRouter> {/* Envolver todo el contenido donde necesitas usarNavigate */}
+              <Box sx={{ position: 'absolute', inset: 0, zIndex: -10, height: '100%', width: '100%', items: 'center', px: 5, py: 24, background: 'radial-gradient(200% 200% at 50% 0%, hsl(192, 15%, 10%) 45%, hsl(183, 54%, 38%) 100%)' }} />
+              <Header />
+              <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/Projects" element={<ProjectsPage />} />
+              </Routes>
+              <Footer />
+            </BrowserRouter>
+          </ThemeProvider>
+        </ColorModeContext.Provider>
+      </LanguageProvider>
     </>
   )
 }
