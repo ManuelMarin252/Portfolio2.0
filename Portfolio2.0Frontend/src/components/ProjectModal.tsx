@@ -21,7 +21,8 @@ export function ModalDetalleProject ({ open, setOpen, props }: { open: boolean, 
     boxShadow: 24,
     overflow: 'visible',
     border: '1px solid hsl(183, 54%, 38%)',
-    borderRadius: '20px'
+    borderRadius: '20px',
+    overflowY: 'hidden'
   }
   return (
     <Modal

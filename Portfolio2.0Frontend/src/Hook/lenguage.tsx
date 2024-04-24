@@ -427,7 +427,7 @@ const allProjectsEn: Project[] =
     title: 'Real-Time Multiplayer Game',
     type: 'Videojuegos',
     description: 'I developed an exciting multiplayer game that utilizes WebSocket technology to facilitate real-time communication among players. This implementation allowed the transfer of information between each instance of the game, enabling synchronization of movements and actions among players on different devices.',
-    link: 'https://youtu.be/b0yXAoNOOgs',
+    link: 'https://youtube.com/embed/b0yXAoNOOgs',
     image: imagenes.juegomultijugador,
     tags: [TAGS.Unity, TAGS.CSharp]
   },
@@ -436,7 +436,7 @@ const allProjectsEn: Project[] =
     title: 'Optimization of Video Game',
     type: 'Videojuegos',
     description: 'I conducted a thorough optimization of a video game scene in Unreal Engine 5, implementing a variety of optimization techniques recognized in the industry. Using methods such as level of detail (LOD) technology, culling, and ninjite, we significantly improved the game\'s performance. The application of these techniques resulted in a notable 20 FPS improvement in the scene, contributing to a smoother and more immersive gaming experience for users.',
-    link: 'https://youtube.com/embed/b0yXAoNOOgs',
+    link: 'https://youtube.com/embed/MewgTRQ9PPY',
     image: imagenes.Optimizacion,
     tags: [TAGS.Unreal]
   },
