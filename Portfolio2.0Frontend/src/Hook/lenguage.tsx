@@ -17,9 +17,10 @@ export default function useLanguage () {
     categorias: language === 'es' ? categoriasEs : categoriasEn,
     projectsPrincipales: language === 'es' ? projectsPrincipalesEs : projectsPrincipalesEn,
     AboutMeContent: language === 'es' ? aboutMeContentEs : aboutMeContentEn,
-    allProjects: language === 'es' ? projectsEs : projectsEn
+    allProjects: language === 'es' ? projectsEs : projectsEn,
+    footerContent: language === 'es' ? footerContentEs : footerContentEn
   }
-  return { language, changeLanguage, links: traduccion.Header, HomeContent: traduccion.HomeContent, experienciaLaboral: traduccion.experienciaLaboral, categorias: traduccion.categorias, projectsPrincipales: traduccion.projectsPrincipales, aboutMeContent: traduccion.AboutMeContent, allProjects: traduccion.allProjects }
+  return { language, changeLanguage, links: traduccion.Header, HomeContent: traduccion.HomeContent, experienciaLaboral: traduccion.experienciaLaboral, categorias: traduccion.categorias, projectsPrincipales: traduccion.projectsPrincipales, aboutMeContent: traduccion.AboutMeContent, allProjects: traduccion.allProjects, footerContent: traduccion.footerContent }
 }
 interface Traduccion {
   Header: ILinks
@@ -29,6 +30,7 @@ interface Traduccion {
   projectsPrincipales: ProjectsPrincipales
   AboutMeContent: AboutMeContent
   allProjects: ProjectsPrincipales
+  footerContent: FooterContent
 }
 
 const HomeContentEs: IHomeContent = {
@@ -63,7 +65,7 @@ const experienciaLaboralEn: ExperienciaLaboral = {
       empresa: 'Colombian Company',
       descripcion: 'Developed web applications for a Colombian company',
       fecha: '2021 - 2024',
-      detalles: 'During my tenure with a Colombian company, I was responsible for designing, developing, and maintaining three pivotal web projects. I leveraged my expertise to successfully migrate two legacy systems from Visual Basic to more contemporary environments, specifically Python-Flask and React. This endeavor required meticulous planning and execution to ensure a seamless and efficient transition, while also enhancing the effectiveness and scalability of the applications. My contributions extended beyond technical implementation to encompass optimization and ongoing maintenance, aimed at guaranteeing optimal performance and delivering a satisfying user experience.'
+      detalles: 'During my time working for a Colombian company, I was responsible for designing, developing, and maintaining three main web projects. I leveraged my expertise to successfully migrate two legacy systems from Visual Basic into modern environments, specifically Python-Flask and React. This endeavor required meticulous planning and execution to ensure a seamless and efficient transition, while also enhancing the effectiveness and scalability of the applications. My contributions not only extends on technical implementation to encompass optimization and ongoing maintenance,it also aimed at guaranteeing optimal performance and delivering a satisfying user experience.'
     }
   ]
 }
@@ -394,9 +396,9 @@ const aboutMeContentEs: AboutMeContent = {
 }
 const aboutMeContentEn: AboutMeContent = {
   Title: 'About Me',
-  Text: ['Hello! I\'m Manuel Enrique Marin Palomino, but everyone calls me Manu. Since I was young, video games have been my great passion, and it was this passion that led me to delve into the world of software development. Although my initial training was as a Mechanical Technician, I expanded my horizons and began studying programming on my own, focusing especially on game development.',
+  Text: ['Hello! I\'m Manuel Enrique Marin Palomino, but everyone calls me Manu. Since I was young, video games have been my great passion, and it was this passion that god me into the world of software development. Although my initial training was as a Mechanical Technician, I expanded my horizons and began studying programming on my own, focusing especially on game development.',
     'Currently, I am in the process of completing my studies as a game developer at the Universidad Abierta Interamericana, where I was awarded a scholarship for my outstanding academic performance since my second year.',
-    'Three years ago, I decided to broaden my knowledge and immersed myself in a Fullstack Python course at Codo a Codo. This experience not only allowed me to complement my education but also opened the doors to my professional career as a freelancer. During this time, I have developed and maintained three projects, each one a new learning adventure.',
+    'Three years ago, I decided to extend my knowledge and Got myself learing in a Fullstack Python course at the "Codo a Codo" program. This experience not only allowed me to complement my education but also opened the doors to my professional career as a freelancer. During this time, I have developed and maintained three projects, each one a new learning adventure.',
     'Currently, I am immersed in a Codo a Codo course focused on UI/UX design, while working on developing my own video game in my spare time. My goal is to continue growing as a professional and always stay abreast of the latest technologies. Let\'s go for more!'
   ]
 }
@@ -849,4 +851,19 @@ const projectsEs: ProjectsPrincipales = {
 const projectsEn: ProjectsPrincipales = {
   title: 'Projects',
   projects: allProjectsEn
+}
+interface FooterContent {
+  text: string
+  contact: string
+  linkedin: string
+}
+const footerContentEs: FooterContent = {
+  text: '© 2021 Manuel Enrique Marin Palomino. Portfolio Inspirado en el hecho por MiduDev. Hecho en React con TypeScript.',
+  contact: 'Contactame',
+  linkedin: 'LikedIn'
+}
+const footerContentEn: FooterContent = {
+  text: '© 2021 Manuel Enrique Marin Palomino. Portfolio Inspired by the one made by MiduDev. Made in React with TypeScript.',
+  contact: 'Contact Me',
+  linkedin: 'LikedIn'
 }
