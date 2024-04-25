@@ -19,9 +19,9 @@ const ProjectCard = ({ image, title, description, tags, link, github }: Project)
   }
   return (
   <Grid container spacing={4} className='group'sx={{ '& .MuiGrid-item.MuiGrid-item': { pl: '33px' } }} >
-    <Grid item xs={12} md={6} >
+    <Grid item xs={12} md={6} sx={{ margin: 'auto' }}>
       <Box
-        className='m-a relative flex flex-col items-center h-[85] col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform   shadow-[5px_5px_rgba(45,_144,_149,_0.4),_10px_10px_rgba(45,_144,_149,_0.3),_15px_15px_rgba(45,_144,_149,_0.2),_20px_20px_rgba(45,_144,_149,_0.1),_25px_25px_rgba(45,_144,_149,_0.05)]  overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-[5px_5px_rgba(45,_144,_149,_0.5),_10px_10px_rgba(45,_144,_149,_0.4),_15px_15px_rgba(45,_144,_149,_0.3),_20px_20px_rgba(45,_144,_149,_0.2),_25px_25px_rgba(45,_144,_149,_0.1)] lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50~'
+        className='relative flex flex-col items-center h-[85] col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform   shadow-[5px_5px_rgba(45,_144,_149,_0.4),_10px_10px_rgba(45,_144,_149,_0.3),_15px_15px_rgba(45,_144,_149,_0.2),_20px_20px_rgba(45,_144,_149,_0.1),_25px_25px_rgba(45,_144,_149,_0.05)]  overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-[5px_5px_rgba(45,_144,_149,_0.5),_10px_10px_rgba(45,_144,_149,_0.4),_15px_15px_rgba(45,_144,_149,_0.3),_20px_20px_rgba(45,_144,_149,_0.2),_25px_25px_rgba(45,_144,_149,_0.1)] lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50~'
         component="div"
       >
         <img alt="Recién llegado vs 5 años en Nueva Zelanda" className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-105 md:group-hover:scale-100" src={image} />
