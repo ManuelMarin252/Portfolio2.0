@@ -858,12 +858,12 @@ interface FooterContent {
   linkedin: string
 }
 const footerContentEs: FooterContent = {
-  text: '© 2021 Manuel Enrique Marin Palomino. Portfolio Inspirado en el hecho por MiduDev. Hecho en React con TypeScript.',
+  text: 'Manuel Enrique Marin Palomino. Portfolio Inspirado en el hecho por MiduDev. Hecho en React con TypeScript.',
   contact: 'Contactame',
   linkedin: 'LikedIn'
 }
 const footerContentEn: FooterContent = {
-  text: '© 2021 Manuel Enrique Marin Palomino. Portfolio Inspired by the one made by MiduDev. Made in React with TypeScript.',
+  text: 'Manuel Enrique Marin Palomino. Portfolio Inspired by the one made by MiduDev. Made in React with TypeScript.',
   contact: 'Contact Me',
   linkedin: 'LikedIn'
 }
