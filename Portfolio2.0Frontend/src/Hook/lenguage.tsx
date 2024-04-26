@@ -301,7 +301,7 @@ const PROJECTSPRINCIPALES: Project[] = [
     description:
       'Sistema de Gestión Documental para Alcadias, creado con React, Material-UI, Flask y Microsoft SQL Server. La modernización del sistema desde Visual Basic a estas tecnologías ha permitido una experiencia de usuario mejorada y una gestión más eficiente de los documentos, así como la centralización del sistema. Este proyecto ha contribuido significativamente a la optimización de la administración documental en donde fue instalado.',
     image: r,
-    link: 'https://adventjs.dev',
+    link: 'https://www.youtube.com/embed/X-4ft9mupL8',
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
   {
@@ -310,7 +310,7 @@ const PROJECTSPRINCIPALES: Project[] = [
     type: 'web',
     description:
       'Sistema de Gestión de Inventario para Almacenes, desarrollado con React, Material-UI, Flask y Microsoft SQL Server. Este sistema proporciona una administración de inventario más eficiente y una experiencia de usuario mejorada, cumpliendo con los requisitos del cliente. El proyecto ha contribuido de manera significativa a la optimización de la gestión de inventario en los almacenes donde ha sido implementado',
-    link: 'https://adventjs.dev',
+    link: 'https://youtube.com/embed/oGwCtHYdOkY',
     image: e,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
@@ -319,7 +319,7 @@ const PROJECTSPRINCIPALES: Project[] = [
     title: 'Juego Multijugador en Tiempo Real',
     type: 'Videojuegos',
     description: 'Desarrollé un emocionante juego multijugador que aprovecha la tecnología de WebSockets para facilitar la comunicación en tiempo real entre los jugadores. Esta implementación permitió la transferencia de información entre cada instancia del juego, lo que posibilitó la sincronización de movimientos y acciones entre los jugadores en diferentes dispositivos.',
-    link: 'https://youtu.be/b0yXAoNOOgs',
+    link: 'https://youtube.com/embed/b0yXAoNOOgs',
     image: f,
     tags: [TAGS.Unity, TAGS.CSharp]
   },
@@ -328,7 +328,7 @@ const PROJECTSPRINCIPALES: Project[] = [
     title: 'Optimización Videojuego en Unreal Engine 5',
     type: 'Videojuegos',
     description: 'Realicé una exhaustiva optimización de una escena de videojuego en Unreal Engine 5, implementando una variedad de técnicas de optimización reconocidas en la industria. Utilizando métodos como la tecnología de nivel de detalle (LOD), culling y ninite, logramos mejorar significativamente el rendimiento del juego. La aplicación de estas técnicas resultó en una notable mejora de 20 FPS en la escena, lo que contribuyó a una experiencia de juego más fluida y envolvente para los usuarios.',
-    link: 'https://adventjs.dev',
+    link: 'https://youtube.com/embed/MewgTRQ9PPY',
     image: g,
     tags: [TAGS.Unreal]
   }
@@ -342,7 +342,7 @@ const PROJECTSPRINCIPALEN: Project[] = [
     description:
       'Document Management System for Municipalities, created with React, Material-UI, Flask, and Microsoft SQL Server. The modernization of the system from Visual Basic to these technologies has enabled an enhanced user experience and more efficient document management, as well as system centralization. This project has significantly contributed to optimizing document management where it was deployed.',
     image: r,
-    link: 'https://adventjs.dev',
+    link: 'https://www.youtube.com/embed/X-4ft9mupL8',
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
   {
@@ -351,7 +351,7 @@ const PROJECTSPRINCIPALEN: Project[] = [
     type: 'web',
     description:
       'Inventory Management System for Warehouses, developed with React, Material-UI, Flask, and Microsoft SQL Server. This system provides more efficient inventory management and an enhanced user experience, meeting client requirements. The project has significantly contributed to optimizing inventory management in the warehouses where it has been implemented.',
-    link: 'https://adventjs.dev',
+    link: 'https://youtube.com/embed/oGwCtHYdOkY',
     image: e,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
@@ -360,7 +360,7 @@ const PROJECTSPRINCIPALEN: Project[] = [
     title: 'Real-Time Multiplayer Game',
     type: 'Videojuegos',
     description: 'I developed an exciting multiplayer game that utilizes WebSocket technology to facilitate real-time communication among players. This implementation allowed the transfer of information between each instance of the game, enabling synchronization of movements and actions among players on different devices.',
-    link: 'https://youtu.be/b0yXAoNOOgs',
+    link: 'https://youtube.com/embed/b0yXAoNOOgs',
     image: f,
     tags: [TAGS.Unity, TAGS.CSharp]
   },
@@ -369,7 +369,7 @@ const PROJECTSPRINCIPALEN: Project[] = [
     title: 'Optimization of Video Game in Unreal Engine 5',
     type: 'Videojuegos',
     description: 'I conducted a thorough optimization of a video game scene in Unreal Engine 5, implementing a variety of optimization techniques recognized in the industry. Using methods such as level of detail (LOD) technology, culling, and ninjite, we significantly improved the game\'s performance. The application of these techniques resulted in a notable 20 FPS improvement in the scene, contributing to a smoother and more immersive gaming experience for users.',
-    link: 'https://adventjs.dev',
+    link: 'https://youtube.com/embed/MewgTRQ9PPY',
     image: g,
     tags: [TAGS.Unreal]
   }
@@ -420,7 +420,7 @@ const allProjectsEn: Project[] =
     type: 'web',
     description:
       'Inventory Management System for Warehouses, developed with React, Material-UI, Flask, and Microsoft SQL Server. This system provides more efficient inventory management and an enhanced user experience, meeting client requirements. The project has significantly contributed to optimizing inventory management in the warehouses where it has been implemented.',
-    link: 'https://youtube.com/embed/ngX88eAkLBU',
+    link: 'https://youtube.com/embed/oGwCtHYdOkY',
     image: imagenes.Inventario,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
@@ -640,7 +640,7 @@ const allProjectsEs: Project[] = [
     type: 'web',
     description:
       'Sistema de Gestión de Inventario para Almacenes, desarrollado con React, Material-UI, Flask y Microsoft SQL Server. Este sistema proporciona una administración de inventario más eficiente y una experiencia de usuario mejorada, cumpliendo con los requisitos del cliente. El proyecto ha contribuido de manera significativa a la optimización de la gestión de inventario en los almacenes donde ha sido implementado',
-    link: 'https://youtube.com/embed/ngX88eAkLBU',
+    link: 'https://youtube.com/embed/oGwCtHYdOkY',
     image: imagenes.Inventario,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
