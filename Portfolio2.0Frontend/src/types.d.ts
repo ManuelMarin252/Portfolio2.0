@@ -20,7 +20,7 @@ export interface ExperienciaLaboral {
     empresa: string
     descripcion: string
     fecha: string
-    detalles: string
+    detalles: () => JSX.Element
   }>
 }
 export interface IHomeContent {

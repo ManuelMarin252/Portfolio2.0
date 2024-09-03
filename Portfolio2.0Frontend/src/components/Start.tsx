@@ -29,9 +29,9 @@ export default function Home () {
                   <Typography variant="body1" sx={{ textWarp: 'pretty' }}>{HomeContent.PrimerTexto[1]}{' '}<Box component="span" sx={{ color: theme.palette.primary.main }} >{HomeContent.PrimerTexto[2]}</Box>{' '}{HomeContent.PrimerTexto[3]}</Typography>
                 </Box>
                 <Box sx={{ mt: '10px', display: 'flex', gap: '10px' }}>
-                  <Chip variant="outlined" onClick={() => { abrirlink('https://api.whatsapp.com/send?phone=5491173699882') }} icon={<WhatsAppIcon fontSize="small" />} label={HomeContent.SegundoTexto[0]} />
-                  <Chip variant="outlined" onClick={() => { abrirlink('https://linkedin.com/in/manuel-enrique-marin-palomino') }} icon={<LinkedInIcon fontSize="small" />} label={HomeContent.SegundoTexto[1]} />
-                  <Chip variant="outlined" onClick={() => { abrirlink('https://gitlab.com/manuelmarinpalomino/portfolio-manuel-enrique-marin-palomino') }} icon={<GitHubIcon fontSize="small" />} label={HomeContent.SegundoTexto[2]} />
+                  <Chip variant="filled" color="primary" onClick={() => { abrirlink('https://api.whatsapp.com/send?phone=5491173699882') }} icon={<WhatsAppIcon fontSize="small" />} label={HomeContent.SegundoTexto[0]} />
+                  <Chip variant="filled" color="primary" onClick={() => { abrirlink('https://linkedin.com/in/manuel-enrique-marin-palomino') }} icon={<LinkedInIcon fontSize="small" />} label={HomeContent.SegundoTexto[1]} />
+                  <Chip variant="filled" color="primary" onClick={() => { abrirlink('https://gitlab.com/manuelmarinpalomino/portfolio-manuel-enrique-marin-palomino') }} icon={<GitHubIcon fontSize="small" />} label={HomeContent.SegundoTexto[2]} />
                 </Box>
               </Box>
             </Box>

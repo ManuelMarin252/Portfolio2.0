@@ -1,0 +1,4 @@
+.blurred {
+  backdrop-filter: blur(10px); /* Ajusta el valor según tus necesidades */
+  transition: backdrop-filter 0.3s ease;
+}

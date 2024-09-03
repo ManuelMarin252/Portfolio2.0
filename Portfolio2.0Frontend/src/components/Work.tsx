@@ -44,7 +44,7 @@ export default function Work () {
                 </Box>
                 <Box width="100%">
                   <Typography variant="subtitle1" fontWeight="bold" sx={{ color: `${colors.grey[200]}`, display: 'flex', justifyContent: 'center', whiteSpace: 'pre-wrap' }}>
-                    {experiencia.detalles}
+                    {experiencia.detalles()}
                   </Typography>
                 </Box>
               </TimelineContent>

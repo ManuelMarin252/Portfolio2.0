@@ -48,7 +48,7 @@ const ProjectCard = ({ image, title, description, tags, link, github }: Project)
             <Chip
               label='Github'
               color="primary"
-              variant="outlined"
+              variant="filled"
               icon={<GitHub />}
               sx={{ '& .MuiChip-icon': { ml: '10px' } }}
               onClick={() => { abrirlink(github) }}
@@ -58,7 +58,7 @@ const ProjectCard = ({ image, title, description, tags, link, github }: Project)
             <Chip
               label='preview'
               color="primary"
-              variant="outlined"
+              variant="filled"
               icon={<VisibilityOutlined />}
               sx={{ '& .MuiChip-icon': { ml: '10px' } }}
               onClick={() => { abrirlink(link) }}
@@ -88,8 +88,8 @@ export default function ProyectosPrincipales () {
               </Box>
               <Box sx={{ display: 'flex', width: '100%', justifyContent: 'start', alingItems: 'center', flexDirection: 'column' }} >
                 <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center', gap: '20px' }} >
-                    <Chip onClick={() => { handleChange(0) }} label='Desarrollo Web' color="primary" variant="outlined" icon={<LanguageIcon />} sx={{ mr: '10px', '& .MuiChip-icon': { ml: '10px' }, backgroundColor: value === 0 ? theme.palette.background.paper : '' }} />
-                    <Chip onClick={() => { handleChange(1) }} label='Videojuegos' color="primary" variant="outlined" icon={<SportsEsportsIcon />} sx={{ mr: '10px', '& .MuiChip-icon': { ml: '10px' }, backgroundColor: value === 1 ? theme.palette.background.paper : '' }} />
+                    <Chip onClick={() => { handleChange(0) }} label='Desarrollo Web' color="primary" variant="filled" icon={<LanguageIcon />} sx={{ mr: '10px', '& .MuiChip-icon': { ml: '10px' }, backgroundColor: value === 1 ? theme.palette.background.paper : '' }} />
+                    <Chip onClick={() => { handleChange(1) }} label='Videojuegos' color="primary" variant="filled" icon={<SportsEsportsIcon />} sx={{ mr: '10px', '& .MuiChip-icon': { ml: '10px' }, backgroundColor: value === 0 ? theme.palette.background.paper : '' }} />
                 </Box>
                 <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center', gap: '20px' }} >
                 <Box width='100%'>

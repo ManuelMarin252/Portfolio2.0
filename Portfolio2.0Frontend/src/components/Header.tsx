@@ -75,8 +75,8 @@ export function Header () {
         sx={{
           position: 'sticky',
           top: 0,
-          zIndex: 100,
-          borderRadius: '15px' // Redondea todo el contenedor// Oculta el desenfoque fuera del contenedor
+          zIndex: 100
+          // borderRadius: '15px' // Redondea todo el contenedor// Oculta el desenfoque fuera del contenedor
           // Agrega una transición suave
         }}
       >
@@ -86,27 +86,29 @@ export function Header () {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            py: '5px', // Agrega una transición suave
-            width: 'auto'
+            py: '5px',
+            pt: 0, // Agrega una transición suave
+            width: 'auto',
+            backdropFilter: 'blur(10px)'
           }}
         >
           <Box sx={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            p: '5px',
-            backgroundColor: scrolled ? 'hsla(192, 15%, 10%,0.99)' : 'transparent',
-            borderRadius: '25px', // Cambia el color de fondo cuando se ha hecho scroll
+            p: '10px',
+            backgroundColor: scrolled ? 'rgb(3, 23, 30,100%)' : 'transparent',
+            borderRadius: '30px', // Cambia el color de fondo cuando se ha hecho scroll
             transition: 'background-color 0.3s', // Agrega una transición suave
-            width: 'auto'
+            width: '60%'
           }} >
+        <Box
+          component="nav"
+          sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', flexDirection: 'row', gap: '10px' }}
+        >
         <IconButton aria-label="menu" color="primary" onClick={() => { changeLanguage() }}>
           {language === 'es' ? <EspañolIcon /> : <InglesIcon />}
         </IconButton>
-        <Box
-          component="nav"
-          sx={{ display: 'flex', flexDirection: 'row', gap: '10px' }}
-        >
           {/* Mapear sobre los enlaces proporcionados */}
           {links.map(link => (
             <Link

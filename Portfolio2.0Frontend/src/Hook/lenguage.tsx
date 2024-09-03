@@ -1,5 +1,7 @@
 import LanguageContext from '../Context/lenguageContext'
 import { useContext } from 'react'
+import { List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { Circle } from '@mui/icons-material'
 import type { IHomeContent, ILinks, ExperienciaLaboral, Categorias, ProjectsPrincipales, Project, AboutMeContent } from '../types'
 import r from '../assets/FUID.webp'
 import e from '../assets/InventarioReact.webp'
@@ -62,11 +64,80 @@ const experienciaLaboralEn: ExperienciaLaboral = {
   experiencia: [
     {
       puesto: 'Freelance Fullstack Developer',
-      empresa: 'Colombian Company',
+      empresa: 'Conec7a',
       descripcion: 'Developed web applications for a Colombian company',
       fecha: '2021 - 2024',
-      detalles: 'During my time working for a Colombian company, I was responsible for designing, developing, and maintaining three main web projects. I leveraged my expertise to successfully migrate two legacy systems from Visual Basic into modern environments, specifically Python-Flask and React. This endeavor required meticulous planning and execution to ensure a seamless and efficient transition, while also enhancing the effectiveness and scalability of the applications. My contributions not only extends on technical implementation to encompass optimization and ongoing maintenance,it also aimed at guaranteeing optimal performance and delivering a satisfying user experience.'
+      detalles: () => (
+  <List>
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} /> {/* Bullet point icon */}
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Critical Web Projects:</strong> Designed, developed, and maintained three essential web projects for the company.
+          </Typography>
+        }
+      />
+    </ListItem>
+
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>System Migration:</strong> Migrated two legacy systems from Visual Basic to Python-Flask and React, improving application effectiveness and scalability.
+          </Typography>
+        }
+      />
+    </ListItem>
+
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Planning and Execution:</strong> Carefully planned and executed the system transitions, ensuring a smooth and uninterrupted migration.
+          </Typography>
+        }
+      />
+    </ListItem>
+
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Optimization and Maintenance:</strong> Optimized the applications and provided ongoing maintenance to guarantee optimal performance.
+          </Typography>
+        }
+      />
+    </ListItem>
+
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>User Experience Improvement:</strong> Ensured a satisfying user experience by enhancing performance and application scalability.
+          </Typography>
+        }
+      />
+    </ListItem>
+  </List>
+
+      )
     }
+
   ]
 }
 const experienciaLaboralEs: ExperienciaLaboral = {
@@ -74,10 +145,76 @@ const experienciaLaboralEs: ExperienciaLaboral = {
   experiencia: [
     {
       puesto: 'Desarrollador Fullstack Freelance',
-      empresa: 'Empresa Colombiana',
+      empresa: 'Conec7a',
       descripcion: 'Desarrollador de aplicaciones web para empresa colombiana',
       fecha: '2021 - 2024',
-      detalles: 'Durante mi período trabajando para una empresa colombiana, realicé el diseño, desarrollo y mantenimiento de tres proyectos web clave. Aporté mis conocimientos al migrar con éxito dos sistemas heredados de Visual Basic a entornos más modernos, específicamente Python-Flask y React. Este proceso implicó una cuidadosa planificación y ejecución para garantizar una transición fluida y eficiente, además de mejorar la eficacia y la escalabilidad de las aplicaciones. Mi contribución no solo se centró en la implementación técnica, sino también en la optimización y el mantenimiento continuo para asegurar un rendimiento óptimo y una experiencia de usuario satisfactoria.'
+      detalles: () => (
+<List>
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} /> {/* Icono de punto */}
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Proyectos Web Clave:</strong> Diseñé, desarrollé y mantuve tres proyectos web fundamentales para la empresa.
+          </Typography>
+        }
+      />
+    </ListItem>
+
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Migración de Sistemas:</strong> Migré dos sistemas heredados de Visual Basic a Python-Flask y React, mejorando la eficacia y escalabilidad de las aplicaciones.
+          </Typography>
+        }
+      />
+    </ListItem>
+
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Planificación y Ejecución:</strong> Planifiqué y ejecuté cuidadosamente la transición de los sistemas, asegurando una migración fluida y sin interrupciones.
+          </Typography>
+        }
+      />
+    </ListItem>
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Optimización y Mantenimiento:</strong> Optimicé las aplicaciones y brindé mantenimiento continuo para garantizar un rendimiento óptimo.
+          </Typography>
+        }
+      />
+    </ListItem>
+    <ListItem>
+      <ListItemIcon>
+        <Circle sx={{ fontSize: 8, color: 'primary.main' }} />
+      </ListItemIcon>
+      <ListItemText
+        primary={
+          <Typography>
+            <strong>Mejora de la Experiencia de Usuario:</strong> Aseguré una experiencia de usuario satisfactoria mediante la mejora del rendimiento y la escalabilidad de las aplicaciones.
+          </Typography>
+        }
+      />
+    </ListItem>
+  </List>
+
+      )
     }
   ]
 }
