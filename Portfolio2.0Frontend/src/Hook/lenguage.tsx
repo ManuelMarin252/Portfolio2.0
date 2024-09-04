@@ -1,7 +1,7 @@
 import LanguageContext from '../Context/lenguageContext'
 import { useContext } from 'react'
 import { List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
-import { Circle } from '@mui/icons-material'
+import { BeenhereOutlined, Circle, Code, Home, SentimentSatisfiedAltOutlined, WorkOutlineOutlined } from '@mui/icons-material'
 import type { IHomeContent, ILinks, ExperienciaLaboral, Categorias, ProjectsPrincipales, Project, AboutMeContent } from '../types'
 import r from '../assets/FUID.webp'
 import e from '../assets/InventarioReact.webp'
@@ -46,18 +46,18 @@ const HomeContentEn: IHomeContent = {
   SegundoTexto: ['Contact me', 'LinkedIn', 'GitHub']
 }
 const linksEs: ILinks = [
-  { id: 'home', text: 'Home' },
-  { id: 'experiencia', text: 'Experiencia' },
-  { id: 'Skills', text: 'Skills' },
-  { id: 'Projects', text: 'Projectos' },
-  { id: 'AboutMe', text: 'Sobre Mi' }
+  { id: 'home', text: 'Home', icon: <Home /> },
+  { id: 'experiencia', text: 'Experiencia', icon: <WorkOutlineOutlined/> },
+  { id: 'Skills', text: 'Skills', icon: <BeenhereOutlined /> },
+  { id: 'Projects', text: 'Projectos', icon: <Code /> },
+  { id: 'AboutMe', text: 'Sobre Mi', icon: <SentimentSatisfiedAltOutlined /> }
 ]
 const linksEn: ILinks = [
-  { id: 'home', text: 'Home' },
-  { id: 'experiencia', text: 'Experience' },
-  { id: 'Skills', text: 'Skills' },
-  { id: 'Projects', text: 'Projects' },
-  { id: 'AboutMe', text: 'About Me' }
+  { id: 'home', text: 'Home', icon: <Home /> },
+  { id: 'experiencia', text: 'Experience', icon: <WorkOutlineOutlined/> },
+  { id: 'Skills', text: 'Skills', icon: <BeenhereOutlined /> },
+  { id: 'Projects', text: 'Projects', icon: <Code /> },
+  { id: 'AboutMe', text: 'About Me', icon: <SentimentSatisfiedAltOutlined /> }
 ]
 const experienciaLaboralEn: ExperienciaLaboral = {
   titulo: 'Work Experience',

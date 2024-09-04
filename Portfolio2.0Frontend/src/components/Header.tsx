@@ -117,7 +117,14 @@ export function Header () {
               color={atSection === link.id ? 'secondary' : 'primary'}
               underline="none"
               onClick={(): void => { handleClick(link.id) }}
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                gap: '8px'
+              }}
             >
+              {link.icon}
               {link.text}
             </Link>
           ))}

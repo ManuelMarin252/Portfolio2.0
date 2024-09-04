@@ -23,7 +23,7 @@ export default function Skills () {
                 <Typography color="primary" variant="h4" fontWeight="bold" component="h1" >Skills</Typography>
               </Box>
               <Box sx={{ display: 'flex', width: '100%', justifyContent: 'start', alingItems: 'center', flexDirection: 'column' }} >
-                <Box width='100%' onMouseEnter={() => { setHovered(true) }} onMouseLeave={() => { setHovered(false) }} sx={{ cursor: hovered ? 'pointer' : 'auto' }}>
+                <Box width='100%' onMouseEnter={() => { setHovered(true) }} onMouseLeave={() => { setHovered(false) }} sx={{ userSelect: 'none', cursor: hovered ? 'pointer' : 'auto' }}>
                   <AutoPlaySwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                     index={activeStep}

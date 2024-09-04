@@ -1,6 +1,7 @@
 export interface ILink {
   id: string
   text: string
+  icon: JSX.Element
 }
 export type ILinks = ILink[]
 export interface Categoria {
