@@ -8,7 +8,9 @@ const BadgeAnimatedGradientBorder = ({ link, description, addClass, nuevaPestañ
       window.open(url, '_blank')
       return
     }
+    // hacer escroll hacia el principio de la pagina
     Navigate(url)
+    window.scrollTo(0, 0)
   }
   return (
   <Box className={`flex items-center ${addClass}`} onClick={() => { nuevaPestaña === undefined ? abrirlink(link) : abrirlink(link, '_self') }}>

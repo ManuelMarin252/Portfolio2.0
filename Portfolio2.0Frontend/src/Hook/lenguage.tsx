@@ -1,7 +1,7 @@
 import LanguageContext from '../Context/lenguageContext'
 import { useContext } from 'react'
 import { List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
-import { BeenhereOutlined, Circle, Code, Home, SentimentSatisfiedAltOutlined, WorkOutlineOutlined } from '@mui/icons-material'
+import { BeenhereOutlined, BookOutlined, Circle, Code, Home, SentimentSatisfiedAltOutlined, WorkOutlineOutlined } from '@mui/icons-material'
 import type { IHomeContent, ILinks, ExperienciaLaboral, Categorias, ProjectsPrincipales, Project, AboutMeContent } from '../types'
 import r from '../assets/FUID.webp'
 import e from '../assets/InventarioReact.webp'
@@ -20,9 +20,10 @@ export default function useLanguage () {
     projectsPrincipales: language === 'es' ? projectsPrincipalesEs : projectsPrincipalesEn,
     AboutMeContent: language === 'es' ? aboutMeContentEs : aboutMeContentEn,
     allProjects: language === 'es' ? projectsEs : projectsEn,
-    footerContent: language === 'es' ? footerContentEs : footerContentEn
+    footerContent: language === 'es' ? footerContentEs : footerContentEn,
+    education: language === 'es' ? educationEs : educationEn
   }
-  return { language, changeLanguage, links: traduccion.Header, HomeContent: traduccion.HomeContent, experienciaLaboral: traduccion.experienciaLaboral, categorias: traduccion.categorias, projectsPrincipales: traduccion.projectsPrincipales, aboutMeContent: traduccion.AboutMeContent, allProjects: traduccion.allProjects, footerContent: traduccion.footerContent }
+  return { language, changeLanguage, links: traduccion.Header, HomeContent: traduccion.HomeContent, experienciaLaboral: traduccion.experienciaLaboral, categorias: traduccion.categorias, projectsPrincipales: traduccion.projectsPrincipales, aboutMeContent: traduccion.AboutMeContent, allProjects: traduccion.allProjects, footerContent: traduccion.footerContent, education: traduccion.education }
 }
 interface Traduccion {
   Header: ILinks
@@ -33,6 +34,7 @@ interface Traduccion {
   AboutMeContent: AboutMeContent
   allProjects: ProjectsPrincipales
   footerContent: FooterContent
+  education: Education
 }
 
 const HomeContentEs: IHomeContent = {
@@ -48,6 +50,7 @@ const HomeContentEn: IHomeContent = {
 const linksEs: ILinks = [
   { id: 'home', text: 'Home', icon: <Home /> },
   { id: 'experiencia', text: 'Experiencia', icon: <WorkOutlineOutlined/> },
+  { id: 'Education', text: 'Education', icon: <BookOutlined /> },
   { id: 'Skills', text: 'Skills', icon: <BeenhereOutlined /> },
   { id: 'Projects', text: 'Projectos', icon: <Code /> },
   { id: 'AboutMe', text: 'Sobre Mi', icon: <SentimentSatisfiedAltOutlined /> }
@@ -55,10 +58,90 @@ const linksEs: ILinks = [
 const linksEn: ILinks = [
   { id: 'home', text: 'Home', icon: <Home /> },
   { id: 'experiencia', text: 'Experience', icon: <WorkOutlineOutlined/> },
+  { id: 'Education', text: 'Education', icon: <BookOutlined /> },
   { id: 'Skills', text: 'Skills', icon: <BeenhereOutlined /> },
   { id: 'Projects', text: 'Projects', icon: <Code /> },
   { id: 'AboutMe', text: 'About Me', icon: <SentimentSatisfiedAltOutlined /> }
 ]
+interface Education {
+  titulo: string
+  educacion: Array<{
+    titulo: string
+    institucion: string
+    fecha: string
+    detalles: string
+  }>
+}
+const educationEs: Education = {
+  titulo: 'Educación',
+  educacion: [
+    {
+      titulo: 'Licenciatura en Producción de Simuladores y Videojuegos',
+      institucion: 'Universidad Abierta Interamericana',
+      fecha: '2020 - Actualidad',
+      detalles: 'Game Desing, Animacion 3D, Programacion de Videojuegos, Desarrollo de Simuladores'
+    },
+    {
+      titulo: 'Fullstack Python Developer',
+      institucion: 'Codo a Codo 4.0',
+      fecha: '2021',
+      detalles: 'Desarrollo de Aplicaciones Web, Programacion en Python, Flask, SQL, HTML, CSS, Javascript, Vue.js'
+    },
+    {
+      titulo: 'Fullstack Node-React Developer',
+      institucion: 'Codo a Codo 4.0',
+      fecha: '2022',
+      detalles: 'Desarrollo de Aplicaciones Web, Programacion en Node.js, React, SQL, HTML, CSS, Javascript, Bootstrap'
+    },
+    {
+      titulo: 'Google Cloud Computing Foundations',
+      institucion: 'Google',
+      fecha: '2023',
+      detalles: 'Fundamentos de Computacion en la Nube, Google Cloud, Google Cloud Platform, Google Cloud Storage'
+    },
+    {
+      titulo: 'Diseño UI/UX',
+      institucion: 'Codo a Codo 4.0',
+      fecha: '2024',
+      detalles: 'Diseño de Interfaces de Usuario, Experiencia de Usuario, Figma, Adobe XD, Canva, User Research'
+    }
+  ]
+}
+const educationEn: Education = {
+  titulo: 'Education',
+  educacion: [
+    {
+      titulo: 'Bachelor in Simulator and Video Game Production',
+      institucion: 'Universidad Abierta Interamericana',
+      fecha: '2020 - Present',
+      detalles: 'Game Desing, 3D Animation, Video Game Programming, Simulator Development'
+    },
+    {
+      titulo: 'Fullstack Python Developer',
+      institucion: 'Codo a Codo 4.0',
+      fecha: '2021',
+      detalles: 'Web Application Development, Python Programming, Flask, SQL, HTML, CSS, Javascript, Vue.js'
+    },
+    {
+      titulo: 'Fullstack Node-React Developer',
+      institucion: 'Codo a Codo 4.0',
+      fecha: '2022',
+      detalles: 'Web Application Development, Node.js Programming, React, SQL, HTML, CSS, Javascript, Bootstrap'
+    },
+    {
+      titulo: 'Google Cloud Computing Foundations',
+      institucion: 'Google',
+      fecha: '2023',
+      detalles: 'Cloud Computing Fundamentals, Google Cloud, Google Cloud Platform, Google Cloud Storage'
+    },
+    {
+      titulo: 'UI/UX Design',
+      institucion: 'Codo a Codo 4.0',
+      fecha: '2024',
+      detalles: 'User Interface Design, User Experience, Figma, Adobe XD, Canva, User Research'
+    }
+  ]
+}
 const experienciaLaboralEn: ExperienciaLaboral = {
   titulo: 'Work Experience',
   experiencia: [

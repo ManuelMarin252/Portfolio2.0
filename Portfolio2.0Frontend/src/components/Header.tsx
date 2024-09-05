@@ -97,7 +97,7 @@ export function Header () {
             justifyContent: 'center',
             alignItems: 'center',
             p: '10px',
-            backgroundColor: scrolled ? 'rgb(3, 23, 30,100%)' : 'transparent',
+            backgroundColor: scrolled ? 'hsla(192, 15%, 10%,1)' : 'transparent',
             borderRadius: '30px', // Cambia el color de fondo cuando se ha hecho scroll
             transition: 'background-color 0.3s', // Agrega una transición suave
             width: '60%'

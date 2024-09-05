@@ -36,7 +36,7 @@ const ProjectCard = ({ project, buttonText, handleOpen, setOpen }: ProjectCardPr
           </Typography>
         </CardContent>
         <CardActions sx={{ display: 'flex', justifyContent: 'center', alingItems: 'center' }}>
-          <Button size="small" onClick={() => { handleOpen(project, setOpen) }}>{buttonText}</Button>
+          <Button size="small" variant='contained' color='primary' onClick={() => { handleOpen(project, setOpen) }} sx={{ borderRadius: '30px' }}>{buttonText}</Button>
         </CardActions>
       </Card>
     </Grid>

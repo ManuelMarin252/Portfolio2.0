@@ -40,7 +40,7 @@ export default function ProjectsPage () {
           <Chip onClick={() => { handleChange(0) }} label='Desarrollo Web' color="primary" variant="filled" icon={<LanguageIcon />} sx={{ mr: '10px', '& .MuiChip-icon': { ml: '10px' }, backgroundColor: value === 1 ? theme.palette.background.paper : '' }} />
           <Chip onClick={() => { handleChange(1) }} label='Videojuegos' color="primary" variant="filled" icon={<SportsEsportsIcon />} sx={{ mr: '10px', '& .MuiChip-icon': { ml: '10px' }, backgroundColor: value === 0 ? theme.palette.background.paper : '' }} />
         </Box>
-        <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center', gap: '20px' }} >
+        <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center', gap: '20px', userSelect: 'none', '&:hover': { cursor: 'pointer' } }} >
           <Box width='100%'>
             <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'} enableMouseEvents index={value} onChangeIndex={handleChange}>
               <Box sx={{ p: '10px', display: 'flex', flexDirection: 'column', width: '100%', height: 'auto', justifyContent: 'center', alignItems: 'center' }}>
