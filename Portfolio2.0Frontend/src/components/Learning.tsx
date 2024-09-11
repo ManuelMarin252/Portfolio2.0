@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material'
 import { Timeline, TimelineItem, TimelineDot, TimelineSeparator, TimelineConnector, TimelineContent } from '@mui/lab'
 import { BookOutlined } from '@mui/icons-material'
 import { tokens, useMode } from '../theme'
@@ -10,6 +10,7 @@ export default function Learning () {
   const education1 = education.educacion.slice(0, Math.ceil(education.educacion.length / 2))
   const education2 = education.educacion.slice(Math.ceil(education.educacion.length / 2), education.educacion.length)
   const [theme] = useMode()
+  const isMobile = useMediaQuery('(max-width: 600px)')
   const colors = tokens(theme.palette.mode)
   return (
     <Box id='Education' component="section" sx={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', py: '30px' }} >
@@ -19,7 +20,7 @@ export default function Learning () {
       </Box>
       <Box sx={{ display: 'flex', width: '100%', justifyContent: 'start', alingItems: 'center', flexDirection: 'column' }} >
         <Grid width='100%' container spacing={2}>
-          <Grid item xs={6}>
+          <Grid item xs={isMobile ? 12 : 6}>
 
           <Timeline sx={{ width: '100%', '& .MuiTimelineItem-root::before': { content: 'none' }, '& .MuiTimelineConnector-root': { width: '3px' } }}>
                     {education1.map((experiencia, index) => (
@@ -63,7 +64,7 @@ export default function Learning () {
                     </TimelineItem>
                   </Timeline>
           </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={isMobile ? 12 : 6}>
 
 <Timeline sx={{ width: '100%', '& .MuiTimelineItem-root::before': { content: 'none' }, '& .MuiTimelineConnector-root': { width: '3px' } }}>
           {education2.map((experiencia, index) => (

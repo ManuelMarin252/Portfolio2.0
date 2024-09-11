@@ -1,4 +1,4 @@
-import { Box, Avatar, Typography, Chip } from '@mui/material'
+import { Box, Avatar, Typography, Chip, useMediaQuery } from '@mui/material'
 import r from '../assets/WhatsApp Image 2021-03-25 at 12.07.04 AM (1) - copia.jpeg'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
@@ -13,12 +13,13 @@ export default function Home () {
     // abrir link en una nueva pestaña
     window.open(url, '_blank')
   }
+  const isMobile = useMediaQuery('(max-width: 600px)')
   const [theme] = useMode()
   const colors = tokens(theme.palette.mode)
   return (
             <Box id='home' component="section" sx={{ flexDirection: 'row', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', py: '20px' }} >
               <Box width="auto">
-                <Avatar sx={{ width: '100px', height: '100px' }} src={r}/>
+                <Avatar sx={{ display: isMobile ? 'none' : 'flex', width: '100px', height: '100px' }} src={r}/>
               </Box>
               <Box width='100%'>
                 <Box display='flex' gap='10px'>
@@ -28,7 +29,7 @@ export default function Home () {
                 <Box sx={{ color: `${colors.grey[100]}`, fontSize: '1.5rem', width: '100%' }} >
                   <Typography variant="body1" sx={{ textWarp: 'pretty' }}>{HomeContent.PrimerTexto[1]}{' '}<Box component="span" sx={{ color: theme.palette.primary.main }} >{HomeContent.PrimerTexto[2]}</Box>{' '}{HomeContent.PrimerTexto[3]}</Typography>
                 </Box>
-                <Box sx={{ mt: '10px', display: 'flex', gap: '10px' }}>
+                <Box sx={{ mt: '10px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                   <Chip variant="filled" color="primary" onClick={() => { abrirlink('https://api.whatsapp.com/send?phone=5491173699882') }} icon={<WhatsAppIcon fontSize="small" />} label={HomeContent.SegundoTexto[0]} />
                   <Chip variant="filled" color="primary" onClick={() => { abrirlink('https://linkedin.com/in/manuel-enrique-marin-palomino') }} icon={<LinkedInIcon fontSize="small" />} label={HomeContent.SegundoTexto[1]} />
                   <Chip variant="filled" color="primary" onClick={() => { abrirlink('https://gitlab.com/manuelmarinpalomino/portfolio-manuel-enrique-marin-palomino') }} icon={<GitHubIcon fontSize="small" />} label={HomeContent.SegundoTexto[2]} />

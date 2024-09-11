@@ -8,9 +8,12 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 #root {
-  width: 100%;
+  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
   height: fit-content;
   position: relative;
