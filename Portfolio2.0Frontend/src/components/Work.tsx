@@ -26,6 +26,7 @@ export default function Work () {
                 sx={{
                   display: 'flex',
                   flexDirection: 'row',
+                  flexWrap: 'wrap',
                   p: '0',
                   pl: '10px',
                   gap: '40px'

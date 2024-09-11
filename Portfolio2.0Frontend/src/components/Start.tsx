@@ -22,7 +22,7 @@ export default function Home () {
                 <Avatar sx={{ display: isMobile ? 'none' : 'flex', width: '100px', height: '100px' }} src={r}/>
               </Box>
               <Box width='100%'>
-                <Box display='flex' gap='10px'>
+                <Box display='flex' gap='10px' flexDirection={isMobile ? 'column' : 'row'}>
                   <Typography color="primary" variant="h6" align="justify" fontWeight="bold" component="h1" sx={{ textWarp: 'pretty' }}>{HomeContent.PrimerTexto[0]}{' '} </Typography>
                   <Box component='span' className='flex items-center transition md:justify-center md:hover:scale-105'><BadgeAnimatedGradientBorder link='https://linkedin.com/in/manuel-enrique-marin-palomino' description={HomeContent.badgeText} /></Box>
                 </Box>
