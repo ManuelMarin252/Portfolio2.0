@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Fade, Button, Modal, Card, useTheme, CardHeader, CardContent, Typography, Chip, Box, CardActions } from '@mui/material'
+import { Fade, useMediaQuery, Button, Modal, Card, useTheme, CardHeader, CardContent, Typography, Chip, Box, CardActions } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import { GitHub, VisibilityOutlined } from '@mui/icons-material'
 import { type Project } from '../types'
@@ -10,13 +10,14 @@ export function ModalDetalleProject ({ open, setOpen, props }: { open: boolean, 
     // abrir link en una nueva pestaña
     window.open(url, '_blank')
   }
+  const isMobile = useMediaQuery('(max-width: 600px)')
   const styleModal = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     height: '90%',
     transform: 'translate(-50%, -50%)',
-    width: 700,
+    width: isMobile ? '100vw' : 700,
     background: 'radial-gradient(200% 200% at 50% 0%, hsl(192, 15%, 10%) 45%, hsl(183, 54%, 38%) 100%)',
     boxShadow: 24,
     overflow: 'visible',
