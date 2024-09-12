@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useMediaQuery } from '@mui/material'
 import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined'
 import { Timeline, TimelineItem, TimelineDot, TimelineSeparator, TimelineConnector, TimelineContent } from '@mui/lab'
 import { useMode, tokens } from '../theme'
@@ -7,6 +7,7 @@ import useLanguage from '../Hook/lenguage'
 export default function Work () {
   const [theme] = useMode()
   const colors = tokens(theme.palette.mode)
+  const isMobile = useMediaQuery('(max-width: 600px)')
   const { experienciaLaboral } = useLanguage()
   return (
     <Box id="experiencia" component="section" sx={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', py: '30px' }}>
@@ -26,7 +27,7 @@ export default function Work () {
                 sx={{
                   display: 'flex',
                   flexDirection: 'row',
-                  flexWrap: 'wrap',
+                  flexWrap: isMobile ? 'wrap' : 'nowrap',
                   p: '0',
                   pl: '10px',
                   gap: '40px'

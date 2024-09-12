@@ -49,18 +49,18 @@ const HomeContentEn: IHomeContent = {
 }
 const linksEs: ILinks = [
   { id: 'home', text: 'Home', icon: <Home /> },
-  { id: 'experiencia', text: 'Experiencia', icon: <WorkOutlineOutlined/> },
-  { id: 'Education', text: 'Education', icon: <BookOutlined /> },
   { id: 'Skills', text: 'Skills', icon: <BeenhereOutlined /> },
   { id: 'Projects', text: 'Projectos', icon: <Code /> },
+  { id: 'experiencia', text: 'Experiencia', icon: <WorkOutlineOutlined/> },
+  { id: 'Education', text: 'Educación', icon: <BookOutlined /> },
   { id: 'AboutMe', text: 'Sobre Mi', icon: <SentimentSatisfiedAltOutlined /> }
 ]
 const linksEn: ILinks = [
   { id: 'home', text: 'Home', icon: <Home /> },
-  { id: 'experiencia', text: 'Experience', icon: <WorkOutlineOutlined/> },
-  { id: 'Education', text: 'Education', icon: <BookOutlined /> },
   { id: 'Skills', text: 'Skills', icon: <BeenhereOutlined /> },
   { id: 'Projects', text: 'Projects', icon: <Code /> },
+  { id: 'experiencia', text: 'Experience', icon: <WorkOutlineOutlined/> },
+  { id: 'Education', text: 'Education', icon: <BookOutlined /> },
   { id: 'AboutMe', text: 'About Me', icon: <SentimentSatisfiedAltOutlined /> }
 ]
 interface Education {
@@ -548,7 +548,7 @@ const PROJECTSPRINCIPALES: Project[] = [
     title: 'Sistema de Gestión Documental FUID',
     type: 'web',
     description:
-      'Sistema de Gestión Documental para Alcadias, creado con React, Material-UI, Flask y Microsoft SQL Server. La modernización del sistema desde Visual Basic a estas tecnologías ha permitido una experiencia de usuario mejorada y una gestión más eficiente de los documentos, así como la centralización del sistema. Este proyecto ha contribuido significativamente a la optimización de la administración documental en donde fue instalado.',
+      'Sistema de Gestión Documental para Alcadias. La modernización del sistema desde Visual Basic a estas tecnologías ha permitido una experiencia de usuario mejorada y una gestión más eficiente de los documentos, así como la centralización del sistema. Este proyecto ha contribuido significativamente a la optimización de la administración documental en donde fue instalado.',
     image: r,
     link: 'https://www.youtube.com/embed/X-4ft9mupL8',
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
@@ -558,7 +558,7 @@ const PROJECTSPRINCIPALES: Project[] = [
     title: 'Sistema de Gestion de Inventario',
     type: 'web',
     description:
-      'Sistema de Gestión de Inventario para Almacenes, desarrollado con React, Material-UI, Flask y Microsoft SQL Server. Este sistema proporciona una administración de inventario más eficiente y una experiencia de usuario mejorada, cumpliendo con los requisitos del cliente. El proyecto ha contribuido de manera significativa a la optimización de la gestión de inventario en los almacenes donde ha sido implementado',
+      'Sistema de Gestión de Inventario para Almacenes. Este sistema proporciona una administración de inventario más eficiente y una experiencia de usuario mejorada, cumpliendo con los requisitos del cliente. El proyecto ha contribuido de manera significativa a la optimización de la gestión de inventario en los almacenes donde ha sido implementado',
     link: 'https://youtube.com/embed/oGwCtHYdOkY',
     image: e,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
@@ -589,7 +589,7 @@ const PROJECTSPRINCIPALEN: Project[] = [
     title: 'Document Management System FUID',
     type: 'web',
     description:
-      'Document Management System for Municipalities, created with React, Material-UI, Flask, and Microsoft SQL Server. The modernization of the system from Visual Basic to these technologies has enabled an enhanced user experience and more efficient document management, as well as system centralization. This project has significantly contributed to optimizing document management where it was deployed.',
+      'Document Management System for Municipalities. The modernization of the system from Visual Basic to these technologies has enabled an enhanced user experience and more efficient document management, as well as system centralization. This project has significantly contributed to optimizing document management where it was deployed.',
     image: r,
     link: 'https://www.youtube.com/embed/X-4ft9mupL8',
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
@@ -599,7 +599,7 @@ const PROJECTSPRINCIPALEN: Project[] = [
     title: 'Inventory Management System',
     type: 'web',
     description:
-      'Inventory Management System for Warehouses, developed with React, Material-UI, Flask, and Microsoft SQL Server. This system provides more efficient inventory management and an enhanced user experience, meeting client requirements. The project has significantly contributed to optimizing inventory management in the warehouses where it has been implemented.',
+      'Inventory Management System for Warehouses. This system provides more efficient inventory management and an enhanced user experience, meeting client requirements. The project has significantly contributed to optimizing inventory management in the warehouses where it has been implemented.',
     link: 'https://youtube.com/embed/oGwCtHYdOkY',
     image: e,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
