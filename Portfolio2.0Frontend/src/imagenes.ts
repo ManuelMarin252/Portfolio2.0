@@ -52,6 +52,7 @@ import GoogleTranslateClone from './assets/Proyectos/GoogleTranslateClon.webp'
 import AdminDashboard from './assets/Proyectos/AdminDashboard.webp'
 import JavaScriptQuiz from './assets/Proyectos/JavaScriptQuiz.webp'
 import BuscadorPeliculas from './assets/Proyectos/BuscadorPeliculas.webp'
+import image from './assets/Proyectos/image.png'
 
 const imagenes = {
   AdivinarNumero,
@@ -107,6 +108,7 @@ const imagenes = {
   GoogleTranslateClone,
   AdminDashboard,
   JavaScriptQuiz,
-  BuscadorPeliculas
+  BuscadorPeliculas,
+  image
 }
 export default imagenes

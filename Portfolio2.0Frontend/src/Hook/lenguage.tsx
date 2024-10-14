@@ -728,6 +728,16 @@ const allProjectsEn: Project[] =
     tags: [TAGS.Cmas]
   },
   {
+    id: 25,
+    title: 'Sales System',
+    type: 'web',
+    description:
+      'Sales system implemented with C# and Microsoft SQL Server. The system allows users to make product sales, manage product stock, and generate sales reports.',
+    link: 'https://youtu.be/embed/u9oWWwfFd-U',
+    image: imagenes.image,
+    tags: [TAGS.CSharp, TAGS.MSqlServer]
+  },
+  {
     id: 9,
     title: 'GDI Graphics',
     type: 'web',
@@ -893,6 +903,7 @@ const allProjectsEs: Project[] = [
     image: imagenes.Inventario,
     tags: [TAGS.React, TAGS.MATERIAL_UI, TAGS.Python, TAGS.Flask, TAGS.MSqlServer]
   },
+
   {
     id: 3,
     title: 'Juego Multijugador en Tiempo Real',
@@ -946,6 +957,16 @@ const allProjectsEs: Project[] = [
     link: 'https://www.youtube.com/embed/FRTK4jnPxwI',
     image: imagenes.mitsaEtern,
     tags: [TAGS.Cmas]
+  },
+  {
+    id: 25,
+    title: 'Sistema de Ventas',
+    type: 'web',
+    description:
+      'Sistema de ventas implementado con C# y Microsoft SQL Server. El sistema permite a los usuarios realizar ventas de productos, gestionar el stock de productos, y generar reportes de ventas.',
+    link: 'https://youtu.be/embed/u9oWWwfFd-U',
+    image: imagenes.image,
+    tags: [TAGS.CSharp, TAGS.MSqlServer]
   },
   {
     id: 9,
