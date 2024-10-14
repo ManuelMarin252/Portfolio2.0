@@ -733,7 +733,7 @@ const allProjectsEn: Project[] =
     type: 'web',
     description:
       'Sales system implemented with C# and Microsoft SQL Server. The system allows users to make product sales, manage product stock, and generate sales reports.',
-    link: 'https://youtu.be/embed/u9oWWwfFd-U',
+    link: 'https://youtube.com/embed/u9oWWwfFd-U',
     image: imagenes.image,
     tags: [TAGS.CSharp, TAGS.MSqlServer]
   },
@@ -964,7 +964,7 @@ const allProjectsEs: Project[] = [
     type: 'web',
     description:
       'Sistema de ventas implementado con C# y Microsoft SQL Server. El sistema permite a los usuarios realizar ventas de productos, gestionar el stock de productos, y generar reportes de ventas.',
-    link: 'https://youtu.be/embed/u9oWWwfFd-U',
+    link: 'https://youtube.com/embed/u9oWWwfFd-U',
     image: imagenes.image,
     tags: [TAGS.CSharp, TAGS.MSqlServer]
   },
